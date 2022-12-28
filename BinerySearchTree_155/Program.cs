@@ -79,13 +79,13 @@ namespace BinerySearchTree_155
         {
             if (ROOT == null)
             {
-                Console.WriteLine("Tree is empty")
+                Console.WriteLine("Tree is empty");
                 return;
             }
             if (ptr != null)
             {
                 inorder(ptr.leftchild);
-                Console.WriteLine(ptr.info + "");
+                Console.Write(ptr.info + "");
                 inorder(ptr.rightchild);
             }
         }
@@ -101,6 +101,20 @@ namespace BinerySearchTree_155
                 Console.WriteLine(ptr.info + "");
                 preorder(ptr.leftchild);
                 preorder(ptr.rightchild);
+            }
+        }
+        public void postorder(Node ptr)
+        {
+            if (ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+            if (ptr != null)
+            {
+                postorder(ptr.leftchild);
+                postorder(ptr.rightchild);
+                Console.WriteLine(ptr.info + "");
             }
         }
 
