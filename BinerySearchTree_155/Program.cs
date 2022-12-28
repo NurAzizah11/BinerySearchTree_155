@@ -24,11 +24,17 @@ namespace BinerySearchTree_155
     /* A node class consists of three things, the information,
      * references to the right child, and references to the left child */
 
-    internal class Program
+
+    class Program
     {
-        static void Main(string[] args)
+        public Node ROOT;
+        public Program()
         {
+            ROOT = null; /* Initializing ROOT to null */
+        }
+        
         }
     }
+    
 }
 
