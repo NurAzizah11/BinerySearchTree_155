@@ -89,8 +89,21 @@ namespace BinerySearchTree_155
                 inorder(ptr.rightchild);
             }
         }
-        )
+        public void preorder(Node ptr) //perfomes the postorder
+        {
+            if (ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+            if (ptr != null)
+            {
+                Console.WriteLine(ptr.info + "");
+                preorder(ptr.leftchild);
+                preorder(ptr.rightchild);
+            }
         }
+
     }
     
 }
